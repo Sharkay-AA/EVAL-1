@@ -1,9 +1,12 @@
+/* --------------------------- GENERAL SETTINGS ------------------------------- */
+
 body {
   font-size: 20px;
+  margin: 0;
   font-family: "Courier New", Courier, monospace;
 }
 
-/* --------------- HEADER ---------------- */
+/* ------------------------------------ HEADER ------------------------------- */
 
 .navbar {
   flex-wrap: nowrap;
@@ -19,15 +22,25 @@ body {
   border-radius: 30%;
 }
 
-/* --------------- MAIN -----------------*/
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link {
+  color: burlywood;
+}
+
+/* ------------------------------------- MAIN ----------------------------------*/
+
+section {
+  margin: 1em;
+}
+
 h2,
 h3,
 h4 {
+  width: 100%;
+  padding: 2rem;
   text-align: center;
   color: burlywood;
   font-weight: bold;
-  width: 100%;
-  padding: 2rem;
 }
 
 .date {
@@ -36,14 +49,13 @@ h4 {
 }
 
 p {
-  text-align: justify;
-  margin: 1em;
+  margin: 0em;
   padding: 1rem;
+  text-align: justify;
 }
 
 img {
-  width: 98%;
-  margin-left: 0.2em;
+  width: 100%;
   border-radius: 1em;
 }
 
@@ -55,12 +67,26 @@ ul {
   font-weight: bold;
 }
 
+/* -------------------------------- FORM -----------------------------------*/
+
 .container {
-  border: solid;
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
   margin-bottom: 1em;
   padding: 1rem;
+  border: solid;
   background-color: lightgray;
-  width: 95%;
+}
+
+@media screen and (min-width: 450px) {
+  .container {
+    display: inherit;
+  }
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 label {
@@ -71,21 +97,17 @@ label {
   color: lightcoral;
 }
 
-.form-group {
-  display: flex;
-  justify-content: space-between;
-}
-
 .btn {
   width: 100%;
   font-weight: bold;
 }
 
-/* ----------------- FOOTER ---------------*/
+/* --------------------------------------- FOOTER -----------------------------*/
+
 .footer {
   display: flex;
-  justify-content: space-around;
   padding-bottom: 1em;
+  justify-content: space-around;
 }
 
 footer h4 {
