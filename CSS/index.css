@@ -7,6 +7,11 @@ body {
   flex-wrap: nowrap;
 }
 
+.navbar-nav {
+  width: 100%;
+  justify-content: flex-end;
+}
+
 .img-fluid {
   width: 5em;
   border-radius: 30%;
@@ -18,10 +23,18 @@ body {
   padding-top: 1em;
 }
 
+@media screen and (min-width: 1000px) {
+  .first {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 h2 {
   text-align: center;
   color: burlywood;
   font-weight: bold;
+  width: 100%;
 }
 
 .first {
@@ -30,9 +43,20 @@ h2 {
   justify-content: center;
 }
 
+@media screen and (min-width: 655px) {
+  .first {
+    justify-content: space-evenly;
+  }
+}
+
 .card {
   margin: 1em;
   background-color: lightgray;
+  width: 18rem;
+}
+
+.card-img-top {
+  height: 20rem;
 }
 
 .second {
@@ -43,4 +67,5 @@ h2 {
 .footer {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 1em;
 }
