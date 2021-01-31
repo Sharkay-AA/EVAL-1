@@ -1,0 +1,46 @@
+body {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.navbar {
+  flex-wrap: nowrap;
+}
+
+.img-fluid {
+  width: 5em;
+  border-radius: 30%;
+}
+
+.first {
+  background-image: url(/IMAGES/fond\ 2.jpg);
+  background-repeat: round;
+  padding-top: 1em;
+}
+
+h2 {
+  text-align: center;
+  color: burlywood;
+  font-weight: bold;
+}
+
+.first {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 1em;
+  background-color: lightgray;
+}
+
+.second {
+  margin: 1em;
+  text-align: justify;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
