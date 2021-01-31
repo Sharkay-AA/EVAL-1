@@ -3,6 +3,8 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 
+/* -------------- HEADER --------------- */
+
 .navbar {
   flex-wrap: nowrap;
 }
@@ -16,6 +18,8 @@ body {
   width: 5em;
   border-radius: 30%;
 }
+
+/* --------------- MAIN ---------------- */
 
 .first {
   background-image: url(/IMAGES/fond\ 2.jpg);
@@ -63,6 +67,8 @@ h2 {
   margin: 1em;
   text-align: justify;
 }
+
+/* ----------------- FOOTER ----------------- */
 
 .footer {
   display: flex;
